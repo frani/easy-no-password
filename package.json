@@ -1,5 +1,5 @@
 {
-  "name": "easy-no-password",
+  "name": "@frani/easy-no-password",
   "version": "2.0.0",
   "description": "Generates secure, timestamped tokens for passwordless authentication without a database backend.",
   "main": "index.js",
