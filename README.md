@@ -13,19 +13,18 @@ This library is unique because it uses cryptography techniques to generate times
 ## Quick Start
 
 ```javascript
-
-const enp = require("@frani/easy-no-password")
+const enp = require('@frani/easy-no-password')
 
 // Creating a token
-let userid = // ...
-let secret = // ...
-let token = await enp.create(userid, secret)
+let userid = 'frani'
+let secret = 'shh-this-is-our-secret'
+let token = await enp.create(userid, secret) // '8ejx73k9z01'
 
 // Validating a token
-let token = // ...
-let userid = // ...
-let secret = // ...
-let validated = await enp.validate(token, userid, secret)
+let token = '8ejx73k9z01'
+let userid = 'frani'
+let secret = 'shh-this-is-our-secret'
+let validated = await enp.validate(token, userid, secret) // TRUE or FALSE
 ```
 
 ## More Details
